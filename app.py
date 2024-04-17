@@ -5,7 +5,7 @@ import streamlit as st
 from crew import FinancialAnalystCrew
 
 def run():
-    st.title("Financial Analyst Crew")
+    st.title("Financial Analyst ")
     company_name = st.text_input("Enter Company Name:", "Reliance Industries Ltd")
     
     # Add an exit button
