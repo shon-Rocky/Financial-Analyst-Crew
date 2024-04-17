@@ -73,7 +73,6 @@ The `SECTools` class provides the main functionalities of the tool. The `search_
 The `FinancialAnalystCrew` class also uses the `FAISS` and `GPT4AllEmbeddings` classes to create a vector store from the fetched fillings. The `kickoff` function is used to start the analysis process.
 
 The `app.py` function is the main entry point of the script. It uses Streamlit to create a simple UI for the user and to display the results.
-```
 
 Contributing
 ------------
