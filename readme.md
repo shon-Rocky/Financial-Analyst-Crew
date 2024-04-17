@@ -55,6 +55,11 @@ This will start the Financial Analyst Crew and open a web interface in your defa
 
 Once the crew is running, you can use the chatbot to ask questions about company financials. For example, you can ask "What was Apple's revenue last quarter?" and the chatbot will retrieve the information from Apple's 10-Q form and provide an answer.
 
+## Example
+
+![image](https://github.com/shon-Rocky/Financial-Analyst-Crew/assets/140310009/6ba2c972-00c8-42d4-8380-3d476697c9eb)
+
+
 ## Behind the Scenes
 
 The tool uses the `FinancialAnalystCrew` class to interact with the SEC API, process the data, and generate answers. The `SECTools` class provides the main functionalities of the tool.
