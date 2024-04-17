@@ -19,12 +19,12 @@ Usage
 -----
 1. Clone the repository
 ```
-https://github.com/shon-Rocky/Ai_Trading_bot_using_sentiment_analysis.git
+git clone https://github.com/shon-Rocky/Financial-Analyst-Crew.git
 ```
 2. Navigate to the project directory:
 
 ```
-cd Ai_Trading_bot_using_sentiment_analysis
+cd Financial-Analyst-Crew
 ```
 3. Create a virtual environment
 ```
