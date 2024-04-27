@@ -2,7 +2,7 @@
 Financial Analyst Crew
 =====================
 
-Financial Analyst Crew is a analysis tool designed to research and analyze companies using  technologies such as Langchain, and Groq. It leverages SEC API to fetch and analyze 10-Q and 10-K forms, providing valuable insights into company financials.
+Financial Analyst Crew is a analysis tool designed to research and analyze companies using  technologies such as Langchain,CrewAi, and Groq. It leverages SEC API to fetch and analyze 10-Q and 10-K forms, providing valuable insights into company financials.
 
 
 Features
