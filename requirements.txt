@@ -6,7 +6,9 @@ sec-api
 python-dotenv
 crewai
 faiss-cpu
-gpt4all
+torch
+torchvision
+torchaudio
 tools
 tiktoken
 langchain_groq

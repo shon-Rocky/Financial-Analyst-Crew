@@ -66,11 +66,11 @@ The tool uses the `FinancialAnalystCrew` class to interact with the SEC API, pro
 
 The `app.py` script is the main entry point of the tool. It uses Streamlit to create a simple UI for the user.
 
-The `FinancialAnalystCrew` class uses the `QueryApi` class from `sec_api` to fetch the fillings (10-Q and 10-K forms) from the SEC API. It then uses the `FAISS` and `GPT4AllEmbeddings` classes from `langchain_community` to create a vector search system. The `FAISS` class is used to create a retriever that is used to find the relevant documents for a given question.
+The `FinancialAnalystCrew` class uses the `QueryApi` class from `sec_api` to fetch the fillings (10-Q and 10-K forms) from the SEC API. It then uses the `FAISS` and `all-MiniLM-l6-v2` classes from `langchain_community` to create a vector search system. The `FAISS` class is used to create a retriever that is used to find the relevant documents for a given question.
 
 The `SECTools` class provides the main functionalities of the tool. The `search_10q` and `search_10k` functions are used to search the 10-Q and 10-K forms respectively. The `__embedding_search` function is used to search the content of a given URL using the GPT4All embeddings and the `FAISS` retriever.
 
-The `FinancialAnalystCrew` class also uses the `FAISS` and `GPT4AllEmbeddings` classes to create a vector store from the fetched fillings. The `kickoff` function is used to start the analysis process.
+The `FinancialAnalystCrew` class also uses the `FAISS` and `all-MiniLM-l6-v2` classes to create a vector store from the fetched fillings. The `kickoff` function is used to start the analysis process.
 
 The `app.py` function is the main entry point of the script. It uses Streamlit to create a simple UI for the user and to display the results.
 

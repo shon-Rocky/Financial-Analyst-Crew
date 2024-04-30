@@ -8,9 +8,7 @@ def run():
     st.title("Financial Analyst ")
     company_name = st.text_input("Enter Company Name:", "Reliance Industries Ltd")
     
-    # Add an exit button
-    if st.button("Exit"):
-        st.stop()
+    
     
     if st.button("Analyze"):
         inputs = {
@@ -18,6 +16,9 @@ def run():
         }
         output = FinancialAnalystCrew().crew().kickoff(inputs=inputs)
         st.write(output)
+    if st.button("Clear"):
+        # Clear the output area
+        st.empty()
 
 if __name__ == "__main__":
     run()

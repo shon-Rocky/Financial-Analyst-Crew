@@ -4,13 +4,15 @@ import requests
 
 from langchain.tools import tool
 from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.embeddings import GPT4AllEmbeddings
+from src.embeddings import embeddings
 from langchain_community.vectorstores import FAISS
 
 from sec_api import QueryApi
 from unstructured.partition.html import partition_html
 from dotenv import load_dotenv
 load_dotenv()
+
+embedding = embeddings()
 
 class SECTools():
   @tool("Search 10-Q form")
@@ -86,7 +88,7 @@ class SECTools():
     )
     docs = text_splitter.create_documents([content])
     retriever = FAISS.from_documents(
-      docs, GPT4AllEmbeddings()
+      docs, embedding
     ).as_retriever()
     answers = retriever.get_relevant_documents(ask, top_k=4)
     answers = "\n\n".join([a.page_content for a in answers])
